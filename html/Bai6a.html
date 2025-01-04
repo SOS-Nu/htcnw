@@ -19,11 +19,19 @@
         .ten {
             text-align: center;
         }
+
+        #last {
+            width: 100px;
+        }
+
+        #lastmini {
+            width: 50px;
+        }
     </style>
 </head>
 
 <body>
-    <div class="body">
+    <div width="80%" margin="auto" class="body">
         <form action="">
             <div class="ten">
                 <img src="../images/jacson.jpg" alt="">
@@ -34,110 +42,122 @@
                 <table>
                     <tr>
                         <td>
-                            <label for="name">First Name:</label>
-                            <input type="text" name="" id="name">
+                            <label for="name">FirstName:</label>
                         </td>
-                        <td>
+                        <td> <input type="text" name="" id="name">
                             <label for="last">Last Name:</label>
-                            <input type="text" name="" id="last"><br>
+                            <input type="text" name="" id="last">
                         </td>
+
                     </tr>
 
                     <tr>
                         <td>
                             <label for="add1">Address#1:</label>
-                            <input type="text" name="" id="add1"><br>
+                        </td>
+                        <td> <input type="text" name="" id="add1"><br>
                         </td>
                     </tr>
 
                     <tr>
                         <td>
                             <label for="add2">Address#2:</label>
-                            <input type="text" name="" id="add2"><br>
+                        </td>
+                        <td> <input type="text" name="" id="add2"><br>
                         </td>
                     </tr>
 
                     <tr>
                         <td>
                             <label for="city">City:</label>
-                            <input type="text" name="" id="city">
                         </td>
-                        <td>
+                        <td> <input type="text" name="" id="city">
                             <label for="state">State:</label>
-                            <input type="text" name="" id="state">
-                        </td>
-                        <td>
+                            <input type="text" name="" id="lastmini">
                             <label for="zip">Zip:</label>
-                            <input type="text" name="" id="zip"><br>
+                            <input type="text" name="" id="lastmini"><br>
                         </td>
+
                     </tr>
 
                     <tr>
                         <td>
                             <label for="country">Country:</label>
+                        </td>
+                        <td>
                             <input type="text" name="" id="country" placeholder="United States">
                         </td>
                     </tr>
-                </table>
+                    <tr>
+                        <td colspan="3">
+                            <hr>
+                        </td>
+                    </tr>
             </div>
-            <hr>
+
             <div>
-                <table>
-                    <tr>
-                        <td><label for="product">Product:</label></td>
-                        <td>
-                            <select name="" id="chon">
-                                <option value="">ScanMater</option>
-                                <option value="">1</option>
-                                <option value="">2</option>
-                            </select><br>
-                        </td>
-                    </tr>
 
-                    <tr>
-                        <td><label for="date">Date Purchased:</label></td>
-                        <td><input type="text" name="" id="date"></td>
-                    </tr>
+                <tr>
+                    <td><label for="product">Product:</label></td>
+                    <td>
+                        <select name="" id="chon">
+                            <option value="">ScanMater</option>
+                            <option value="">1</option>
+                            <option value="">2</option>
+                        </select><br>
+                    </td>
+                </tr>
 
-                    <tr>
-                        <td><label for="serial">Serial#:</label></td>
-                        <td><input type="text" name="" id="serial"></td>
-                    </tr>
+                <tr>
+                    <td><label for="date">Date Purchased:</label></td>
+                    <td><input type="text" name="" id="date"></td>
+                </tr>
 
-                    <tr>
-                        <td><label for="usedfor">Used For:</label></td>
-                        <td>
-                            <input type="radio" name="" id="">Home
-                            <input type="radio" name="" id="">Educational Institution <br>
-                            <input type="radio" name="" id="">Business
-                            <input type="radio" name="" id="">Other <br>
-                            <input type="radio" name="" id="">Govemment <br>
-                        </td>
-                    </tr>
+                <tr>
+                    <td><label for="serial">Serial#:</label></td>
+                    <td><input type="text" name="" id="serial"></td>
+                </tr>
 
-                    <tr>
-                        <td><label for="system">System(check all that apply):</label></td>
-                        <td>
-                            <input type="checkbox" name="" id="">Windows
-                            <input type="checkbox" name="" id="">UNIX <br>
-                            <input type="checkbox" name="" id="">Macintosh
-                            <input type="checkbox" name="" id="">Other <br>
-                        </td>
-                    </tr>
-                </table>
+                <tr>
+                    <td><label for="usedfor">Used For:</label></td>
+                    <td>
+                        <input type="radio" name="" id="">Home
+                        <input type="radio" name="" id="">Educational Institution <br>
+                        <input type="radio" name="" id="">Business
+                        <input type="radio" name="" id="">Other <br>
+                        <input type="radio" name="" id="">Govemment <br>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label for="system">System(check all that apply):</label></td>
+                    <td>
+                        <input type="checkbox" name="" id="">Windows
+                        <input type="checkbox" name="" id="">UNIX <br>
+                        <input type="checkbox" name="" id="">Macintosh
+                        <input type="checkbox" name="" id="">Other <br>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <hr>
+                    </td>
+                </tr>
             </div>
-            <hr>
             <div>
-                <table>
-                    <tr>
-                        <td><label for="comment">Comments?:</label></td>
-                        <td><textarea name="" id="comment" cols="30" rows="10"></textarea></td>
-                    </tr>
 
-                    <tr>
-                        <td><input type="submit" value="Click to register"></td>
-                        <td><input type="reset" value="Click to cancel"></td>
-                    </tr>
+                <tr>
+                    <td><label for="comment">Comments?:</label></td>
+                    <td><textarea name="" id="comment" cols="30" rows="10"></textarea></td>
+                </tr>
+            </div>
+            <div>
+
+                <tr style="text-align: center;">
+                    <td colspan="2"><input type="submit" value="Click to register">
+                        <input type="reset" value="Click to cancel">
+                    </td>
+                </tr>
                 </table>
             </div>
         </form>
