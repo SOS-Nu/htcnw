@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jackson Electronics Registration Form</title>
+    <style>
+        /* Đổi tên class từ .body thành .form-container */
+        .form-container {
+            max-width: 720px;
+            border: 2px solid black;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: rgb(108, 161, 239);
+            border-radius: 8px;
+            font-family: Arial, sans-serif;
+        }
+
+        .form-container .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .form-container table {
+            width: 100%;
+            margin: 10px 0;
+        }
+
+        .form-container table td {
+            padding: 8px;
+            vertical-align: top;
+        }
+
+        .form-container input,
+        .form-container select,
+        .form-container textarea {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .form-container input[type="radio"],
+        .form-container input[type="checkbox"] {
+            width: auto;
+        }
+
+        .form-container input[type="submit"],
+        .form-container input[type="reset"] {
+            width: auto;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .form-container input[type="submit"] {
+            background-color: green;
+            color: white;
+        }
+
+        .form-container input[type="reset"] {
+            background-color: red;
+            color: white;
+        }
+
+        hr {
+            margin: 20px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="form-container">
+        <form>
+            <div class="header">
+                <img src="/images/jacson.jpg" alt="Jackson Electronics Logo" style="max-width: 150px;">
+                <h2>Registration Form</h2>
+                <p>Register your Jackson Electronics product here</p>
+            </div>
+
+            <fieldset>
+                <legend><strong>Personal Information</strong></legend>
+                <table>
+                    <tr>
+                        <td>
+                            <label for="first-name">First Name:</label>
+                            <input type="text" id="first-name" name="first-name" placeholder="Enter your first name">
+                        </td>
+                        <td>
+                            <label for="last-name">Last Name:</label>
+                            <input type="text" id="last-name" name="last-name" placeholder="Enter your last name">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <label for="address1">Address #1:</label>
+                            <input type="text" id="address1" name="address1" placeholder="Enter your primary address">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <label for="address2">Address #2:</label>
+                            <input type="text" id="address2" name="address2"
+                                placeholder="Enter your secondary address (optional)">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="city">City:</label>
+                            <input type="text" id="city" name="city" placeholder="Enter your city">
+                        </td>
+                        <td>
+                            <label for="state">State:</label>
+                            <input type="text" id="state" name="state" placeholder="Enter your state">
+                        </td>
+                        <td>
+                            <label for="zip">Zip:</label>
+                            <input type="text" id="zip" name="zip" placeholder="Enter your zip code">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            <label for="country">Country:</label>
+                            <input type="text" id="country" name="country" placeholder="United States">
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+
+            <hr>
+
+            <fieldset>
+                <legend><strong>Product Information</strong></legend>
+                <table>
+                    <tr>
+                        <td>
+                            <label for="product">Product:</label>
+                            <select id="product" name="product">
+                                <option value="scanmaster">ScanMaster</option>
+                                <option value="product1">Product 1</option>
+                                <option value="product2">Product 2</option>
+                            </select>
+                        </td>
+                        <td>
+                            <label for="purchase-date">Date Purchased:</label>
+                            <input type="date" id="purchase-date" name="purchase-date">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <label for="serial">Serial #:</label>
+                            <input type="text" id="serial" name="serial" placeholder="Enter product serial number">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <label>Used For:</label>
+                            <input type="radio" id="home" name="usage" value="home">
+                            <label for="home">Home</label>
+                            <input type="radio" id="business" name="usage" value="business">
+                            <label for="business">Business</label>
+                            <input type="radio" id="other" name="usage" value="other">
+                            <label for="other">Other</label>
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+
+            <hr>
+
+            <fieldset>
+                <legend><strong>Additional Comments</strong></legend>
+                <label for="comments">Comments:</label>
+                <textarea id="comments" name="comments" rows="5"
+                    placeholder="Enter your comments or feedback here"></textarea>
+            </fieldset>
+
+            <hr>
+
+            <div style="text-align: center;">
+                <input type="submit" value="Register">
+                <input type="reset" value="Cancel">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
